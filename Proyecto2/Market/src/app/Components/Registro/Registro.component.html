@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="row">
+    <div class="col-9 align-content-center">
+      <form>
+        <br/>
+        <h2 class="text-info"><strong>Registro</strong></h2>
+        <hr/>
+      <p class="text-danger">Los campos con * son obligatorios</p>
+      <br/>
+        <div class="form-group row">
+          <div class="col-3">
+            <label for="nombre" class="text-light">Nombre</label>
+          </div>
+          <div class="col-5">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre">
+          </div>      
+        </div>
+        <div class="form-group row">
+          <div class="col-3">
+            <label for="apellido" class="text-light">Apellido</label>
+          </div>
+          <div class="col-5">
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido">
+          </div>      
+        </div>
+        <div class="form-group row">
+          <div class="col-3">
+            <label for="correo" class="text-light">Correo *</label>
+          </div>
+          <div class="col-5">
+            <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Ingrese su e-mail">
+          </div>      
+        </div>
+        <div class="form-group row">
+          <div class="col-3">
+            <label for="pais" class="text-light">País</label>
+          </div>
+          <div class="col-5">
+            <input type="text" class="form-control" id="pais" placeholder="Ingrese su país">
+          </div>      
+        </div>
+        <div class="form-group row">
+          <div class="col-3">
+            <label for="nacimiento" class="text-light">Fecha de Nacimiento</label>
+          </div>
+          <div class="col-5">
+            <input type="text" class="form-control" id="nacimiento" aria-describedby="dateHelp" placeholder="DD/MM/YYYY">
+          </div>      
+        </div>
+        <div class="form-group row">
+          <div class="col-3">
+            <label for="contraseña" class="text-light">Contraseña *</label>
+          </div>
+          <div class="col-5">
+            <input type="password" class="form-control" id="password" placeholder="Ingrese Contraseña">
+          </div>      
+        </div>
+        <div class="form-group row">
+          <div class="col-3">
+            <label for="confirma" class="text-light">Confirmar Contraseña *</label>
+          </div>
+          <div class="col-5">
+            <input type="password" class="form-control" id="confirma" placeholder="Confirme Contraseña">
+          </div>      
+        </div>   
+      </form>
+    </div>
+    <div class="col align-content-center">
+      <div class="row justify-content-center"  style="margin-top: 60%;">
+        <div class="col-ms-auto">
+          <img id="imagen" src="https://cdn-3.expansion.mx/dims4/default/7719710/2147483647/strip/true/crop/304x413+0+0/resize/600x815!/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2F34%2Fdc%2Fd3f9ed94491b9677ede5c961016f%2Fsilueta.JPG"
+          style="width: 150px;height:180px;"/>
+        </div>
+      </div>
+      <div class="row justify-content-center">     
+          <form>
+          <input type="file" id="file-input" accept=".java" style="display:none" onchange="ValidateSingleInput(this);">
+          </form>
+        <button type="button" class="btn btn-secondary">Subir Foto de Perfil</button>       
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <button type="button" class="btn btn-success">Registrar</button>
+  </div>
+</div>
